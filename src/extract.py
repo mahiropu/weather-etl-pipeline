@@ -58,7 +58,7 @@ def extract(config):
         with open(path, "w") as f:
             json.dump(data, f, indent=2)
 
-        logger.info("Saved raw payload to %s", path.name)
+        logger.info("Saved raw payload to -> %s", path.name)
         payloads.append(data)
 
     logger.info("Extracted %s city payloads", len(payloads))
