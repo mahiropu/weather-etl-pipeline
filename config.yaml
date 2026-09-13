@@ -1,0 +1,33 @@
+cities:
+  - name: Dhaka
+    country: BD
+    latitude: 23.8103
+    longitude: 90.4125
+  - name: Brussels
+    country: BE
+    latitude: 50.8503
+    longitude: 4.3517
+  - name: London
+    country: GB
+    latitude: 51.5074
+    longitude: -0.1278
+  - name: Tokyo
+    country: JP
+    latitude: 35.6762
+    longitude: 139.6503
+  - name: New York
+    country: US
+    latitude: 40.7128
+    longitude: -74.0060
+
+past_days: 7
+
+api:
+  base_url: https://api.open-meteo.com/v1/forecast
+  timeout_seconds: 30
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  database: warehouse.db
+  schema: sql/schema.sql
